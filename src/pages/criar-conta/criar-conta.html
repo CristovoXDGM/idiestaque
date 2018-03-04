@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Criar conta
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding style="background:url(assets/img/76IBbaudRD2RhZANTEVB_hora20de20por20cafC3A9.PNG) no-repeat center;background-size:cover;" id="page5">
+  <form id="criarConta-form3">
+    <ion-list id="criarConta-list4">
+      
+      
+      <ion-item id="criarConta-input6">
+        <ion-label floating>
+          Email
+        </ion-label>
+        <ion-input type="email" placeholder="" #username></ion-input>
+      </ion-item>
+      <ion-item id="criarConta-input7">
+        <ion-label floating>
+          Senha
+        </ion-label>
+        <ion-input type="password" placeholder="" #password></ion-input>
+      </ion-item>
+      
+    </ion-list>
+    <button id="criarConta-button4" ion-button color="stable" block (click) = "registerUser()">
+      Criar
+    </button>
+  </form>
+</ion-content>
