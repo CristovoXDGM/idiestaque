@@ -21,12 +21,13 @@ export class HomePage {
     this.alertCtrl.create({
       title: 'Info!',
       subTitle: message,
-      buttons: ['OK']
+      buttons: ['OK'],
+      
     }).present();
   }
 
   signIn(){
-
+    
     this.fire.auth.signInWithEmailAndPassword(this.user.value,this.password.value)
     .then(data=>{
       this.alert('Success you\'re logged in')

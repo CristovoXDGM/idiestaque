@@ -8,15 +8,19 @@
     </ion-title>
   </ion-navbar>
 </ion-header>
+
 <ion-content padding style="background:url(assets/img/CdPlou01TRy43T2kW9cv_hora20de20por20cafC3A9.PNG) no-repeat center;background-size:cover;" id="page1">
   <form id="home-form1">
+   
     <ion-item id="home-input1">
       <ion-label floating>
         E-mail
       </ion-label>
       <ion-input type="email" placeholder="" name="email" autocomplete  #username></ion-input>
     </ion-item>
+  
   </form>
+  
   <form id="home-form5">
     <ion-item id="home-input2">
       <ion-label floating>
@@ -25,6 +29,7 @@
       <ion-input type="password" placeholder="" name="senha" #password></ion-input>
     </ion-item>
   </form>
+  
   <button id="home-button1" ion-button color="secondary" full  (click)= "signIn()" >
     Entrar
   </button>
