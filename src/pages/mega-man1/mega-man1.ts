@@ -9,8 +9,11 @@ export class MegaMan1Page {
 
   constructor(public navCtrl: NavController) {
   }
-  popThis(){
-   this.navCtrl.pop() 
-  }
-  
+
+
+
+  /*popThis(){
+   this.navCtrl.pop()
+  }*/
+
 }
