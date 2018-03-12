@@ -1,15 +1,9 @@
-<ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>
-      {{'camp_acces'|translate}}
-    </ion-title>
-  </ion-navbar>
-</ion-header>
+
 
 <ion-content padding style="background:url(assets/img/CdPlou01TRy43T2kW9cv_hora20de20por20cafC3A9.PNG) no-repeat center;background-size:cover;" id="page1">
+  <ion-item-divider >
+    {{'camp_acces'|translate}}
+  </ion-item-divider>
   <form id="home-form1">
    
     <ion-item id="home-input1">
@@ -32,5 +26,10 @@
   
   <button id="home-button1" ion-button color="secondary" full  (click)= "signIn()" >
     {{'Intro'|translate}}
+  </button>
+<br>
+<br>
+  <button ion-button menuToggle color="secondary">
+    <ion-icon name="menu"></ion-icon>
   </button>
 </ion-content>

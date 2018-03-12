@@ -2,7 +2,7 @@ import { SobrePage } from './../sobre/sobre';
 import { Component, ViewChild } from '@angular/core';
 import { NavController, AlertController } from 'ionic-angular';
 import {AngularFireAuth} from 'angularfire2/auth'
-import { TranslateService } from '@ngx-translate/core';
+
 
 @Component({
   selector: 'page-home',
