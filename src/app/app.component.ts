@@ -9,7 +9,7 @@ import { CriarContaPage } from '../pages/criar-conta/criar-conta';
 
 
 import { HomePage } from '../pages/home/home';
-
+import { TranslateService } from '@ngx-translate/core';
 
 
 @Component({
@@ -19,10 +19,11 @@ export class MyApp {
   @ViewChild(Nav) navCtrl: Nav;
     rootPage:any = HomePage;
 
-  constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
+  constructor(private translate:TranslateService,platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
+      translate.setDefaultLang('en');
       statusBar.styleDefault();
       splashScreen.hide();
     });
@@ -39,5 +40,8 @@ export class MyApp {
   }goToCriarConta(params){
     if (!params) params = {};
     this.navCtrl.setRoot(CriarContaPage);
+  }
+  switchLanguage(language: string) {
+    this.translate.use(language);
   }
 }

@@ -19,7 +19,7 @@
   <ion-list >
     <button ion-item  *ngFor="let jogo of jogos" (click)="goToMegaMan1(jogo.id)"  >
       <h2>{{jogo.jogo}}</h2>  
-      <h3>{{jogo.descricao}}</h3>
+      <h3>{{'camp_descript'|translate}}</h3>
       <ion-avatar item-left ><img [src]="jogo.img" /></ion-avatar>
     </button>
   
