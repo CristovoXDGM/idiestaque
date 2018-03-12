@@ -39,5 +39,7 @@ export class HomePage {
       console.log('got an error',error);
     })
 
+  
+
   }
 }

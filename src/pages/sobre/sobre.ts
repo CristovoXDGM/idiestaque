@@ -1,6 +1,6 @@
 
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, ToastController } from 'ionic-angular';
 import { MegaMan1Page } from '../mega-man1/mega-man1';
 
 @Component({
@@ -37,16 +37,31 @@ export class SobrePage {
 
 ];
   
-  constructor(public navCtrl: NavController) {
+  constructor(public toastCtrl:ToastController,public navCtrl: NavController) {
 
     
 
   }
+
+
+  presentToast(){
+    let toast = this.toastCtrl.create({
+      message:'Jogo sem informações',
+      duration:2000
+    });
+    toast.present();
+  }
+  
+
   goToMegaMan1(jogo){
 
-    if(jogo == 1){
+    if (jogo == 1){
       this.navCtrl.push(MegaMan1Page);
-    }
+    }else{
+        this.presentToast();
+    }     
 
-  }
+   }
+
+
 }
