@@ -9,6 +9,7 @@ import { CriarContaPage } from '../pages/criar-conta/criar-conta';
 
 import {AngularFireModule} from 'angularfire2'
 import { AngularFireAuthModule } from 'angularfire2/auth';
+import { AngularFirestoreModule } from 'angularfire2/firestore';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -39,6 +40,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
     BrowserModule,
     IonicModule.forRoot(MyApp),
     AngularFireModule.initializeApp(firebaseAuth),
+    AngularFirestoreModule.enablePersistence(),
     AngularFireAuthModule,
     HttpClientModule,
     TranslateModule.forRoot({
